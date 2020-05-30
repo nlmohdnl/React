@@ -17,7 +17,7 @@ function DogGallery() {
               const data = await res.json();
               setDogphotos([...dogPhotos, data.message]);
           } else {
-              throw Error('Oeps! Something went wrong.');
+              throw Error('Something went wrong.');
           }
       }catch (e) {
           setError(true);
